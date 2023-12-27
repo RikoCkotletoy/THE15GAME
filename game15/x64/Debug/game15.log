@@ -1,0 +1,4 @@
+﻿  game15.cpp
+D:\git\THE15GAME\game15\game15.cpp(90,43): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\git\THE15GAME\game15\game15.cpp(90,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  game15.vcxproj -> D:\git\THE15GAME\x64\Debug\game15.exe
