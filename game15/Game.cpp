@@ -1,9 +1,10 @@
 #include "Game.h"
-
+#include "Board.h"
 #include <random>
 #include <vector>
 
 Game::Game() : window(sf::VideoMode(480, 480), "Tag Game", sf::Style::Titlebar | sf::Style::Close) {
+    Board* board;
     loadTexture();
     initializeSprites();
 }
@@ -11,13 +12,13 @@ Game::Game() : window(sf::VideoMode(480, 480), "Tag Game", sf::Style::Titlebar |
 void Game::run() {
     while (window.isOpen()) {
         handleEvents();
-        update();
         render();
     }
 }
 
 void Game::loadTexture() {
-    texture.loadFromFile("C:\\Users\\Евгений\\Desktop\\game15\\picture\\15gamepictureNonBorderedREAL.jpg");
+	texture.loadFromFile("C:\\Users\\Евгений\\Desktop\\game15\\picture\\15gamepictureNonBorderedREAL.jpg");
+    
 }
 
 void Game::initializeSprites() {
@@ -110,18 +111,6 @@ void Game::moveTile(int x, int y) {
     grid[x + dx][y + dy] = n;
 }
 
-void Game::update() {
-    // Additional update logic if needed
-}
-
 void Game::render() {
-    window.clear();
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4; j++) {
-            int n = grid[i + 1][j + 1];
-            sprites[n].setPosition(i * cellSize, j * cellSize);
-            window.draw(sprites[n]);
-        }
-    }
-    window.display();
+    board->render(window, sprites, cellSize, grid);
 }

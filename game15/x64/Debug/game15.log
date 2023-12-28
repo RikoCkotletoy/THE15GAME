@@ -1,30 +1,36 @@
-﻿Сборка начата 29.12.2023 0:58:54.
-Уровень детализации журнала: Normal.     1>Проект "C:\Users\Евгений\Desktop\game15\game15\game15.vcxproj" в узле 2 (целевые объекты Build).
+﻿Сборка начата 29.12.2023 2:20:07.
+Уровень детализации журнала: Normal.     1>Проект "D:\github\THE15GAME\game15\game15.vcxproj" в узле 2 (целевые объекты Build).
      1>InitializeBuildStatus:
          Создание "x64\Debug\game15.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\game15.tlog\unsuccessfulbuild".
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"C:\Users\Евгений\Desktop\SFML-2.6.1\include" /I"D:\cpp\libraries\SFML-2.6.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Game.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /I"C:\Users\Евгений\Desktop\SFML-2.6.1\include" /I"D:\cpp\libraries\SFML-2.6.1\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Board.cpp Game.cpp main.cpp
+         Board.cpp
+     1>D:\github\THE15GAME\game15\Board.cpp(11,52): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>D:\github\THE15GAME\game15\Board.cpp(11,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
          Game.cpp
-     1>C:\Users\Евгений\Desktop\game15\game15\Game.cpp(122,52): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-     1>C:\Users\Евгений\Desktop\game15\game15\Game.cpp(122,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>D:\github\THE15GAME\game15\Game.cpp(7,12): warning C4101: board: неиспользованная локальная переменная
+         main.cpp
+         Создание кода...
        Link:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Евгений\Desktop\game15\x64\Debug\game15.exe" /INCREMENTAL /ILK:"x64\Debug\game15.ilk" /NOLOGO /LIBPATH:"C:\Users\Евгений\Desktop\SFML-2.6.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Евгений\Desktop\game15\x64\Debug\game15.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Евгений\Desktop\game15\x64\Debug\game15.lib" /MACHINE:X64 x64\Debug\Game.obj
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\github\THE15GAME\x64\Debug\game15.exe" /INCREMENTAL /ILK:"x64\Debug\game15.ilk" /NOLOGO /LIBPATH:"C:\Users\Евгений\Desktop\SFML-2.6.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\github\THE15GAME\x64\Debug\game15.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\github\THE15GAME\x64\Debug\game15.lib" /MACHINE:X64 x64\Debug\Board.obj
+         x64\Debug\Game.obj
          x64\Debug\main.obj
-         game15.vcxproj -> C:\Users\Евгений\Desktop\game15\x64\Debug\game15.exe
+         game15.vcxproj -> D:\github\THE15GAME\x64\Debug\game15.exe
        FinalizeBuildStatus:
          Файл "x64\Debug\game15.tlog\unsuccessfulbuild" удаляется.
          Обращение к "x64\Debug\game15.tlog\game15.lastbuildstate".
-     1>Сборка проекта "C:\Users\Евгений\Desktop\game15\game15\game15.vcxproj" завершена (целевые объекты Build).
+     1>Сборка проекта "D:\github\THE15GAME\game15\game15.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
-       "C:\Users\Евгений\Desktop\game15\game15\game15.vcxproj" (целевой объект Build ) (1) ->
+       "D:\github\THE15GAME\game15\game15.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
-         C:\Users\Евгений\Desktop\game15\game15\Game.cpp(122,52): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-         C:\Users\Евгений\Desktop\game15\game15\Game.cpp(122,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+         D:\github\THE15GAME\game15\Board.cpp(11,52): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+         D:\github\THE15GAME\game15\Board.cpp(11,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+         D:\github\THE15GAME\game15\Game.cpp(7,12): warning C4101: board: неиспользованная локальная переменная
 
-    Предупреждений: 2
+    Предупреждений: 3
     Ошибок: 0
 
-Прошло времени 00:00:02.64
+Прошло времени 00:00:02.06

@@ -2,10 +2,12 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Board.h"
+
 class Game {
 public:
     Game();
-
+    Board* board;
     void run();
 
 private:
@@ -22,6 +24,5 @@ private:
     void handleKeyPress(sf::Keyboard::Key key);
     void shuffleTiles();
     void moveTile(int x, int y);
-    void update();
     void render();
 };
