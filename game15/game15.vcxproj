@@ -104,29 +104,19 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-<<<<<<< Updated upstream
+
       <AdditionalIncludeDirectories>D:\cpp\libraries\SFML-2.6.1\include</AdditionalIncludeDirectories>
-=======
-      <AdditionalIncludeDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\include;D:\cpp\libraries\SFML-2.6.1\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalUsingDirectories> namespace sf;</AdditionalUsingDirectories>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
       <AdditionalLibraryDirectories>D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-=======
       <AdditionalLibraryDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\lib;D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> Stashed changes
-=======
-      <AdditionalLibraryDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\lib;D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> Stashed changes
+
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
