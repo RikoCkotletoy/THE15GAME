@@ -110,13 +110,20 @@
       <AdditionalIncludeDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\include;D:\cpp\libraries\SFML-2.6.1\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalUsingDirectories> namespace sf;</AdditionalUsingDirectories>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AdditionalLibraryDirectories>D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\lib;D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> Stashed changes
 =======
       <AdditionalLibraryDirectories>C:\Users\Евгений\Desktop\SFML-2.6.1\lib;D:\cpp\libraries\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 >>>>>>> Stashed changes

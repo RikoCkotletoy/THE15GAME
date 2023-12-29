@@ -18,7 +18,11 @@ void Game::run() {
 }
 
 void Game::loadTexture() {
+<<<<<<< Updated upstream
     texture.loadFromFile("D:\\laboaip\\game15\\picture\\15gamepictureNonBorderedREAL.jpg");
+=======
+    texture.loadFromFile("D:\\git\\THE15GAME\\picture\\15gamepictureNonBorderedREAL.jpg");
+>>>>>>> Stashed changes
 }
 
 void Game::initializeSprites() {

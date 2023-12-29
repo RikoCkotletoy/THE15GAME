@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ﻿  game15.cpp
 D:\laboaip\game15\game15\game15.cpp(91,43): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
 D:\laboaip\game15\game15\game15.cpp(91,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
@@ -7,4 +8,9 @@ D:\laboaip\game15\game15\game15.cpp(91,36): warning C4244: аргумент: п�
 ﻿  Game.cpp
 D:\git\THE15GAME\game15\Game.cpp(8,12): warning C4101: board: неиспользованная локальная переменная
   game15.vcxproj -> D:\git\THE15GAME\x64\Debug\game15.exe
+>>>>>>> Stashed changes
+=======
+﻿  Game.cpp
+D:\git\savingcpy\game15\Game.cpp(8,12): warning C4101: board: неиспользованная локальная переменная
+  game15.vcxproj -> D:\git\savingcpy\x64\Debug\game15.exe
 >>>>>>> Stashed changes
