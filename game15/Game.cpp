@@ -2,8 +2,9 @@
 #include "Board.h"
 #include <random>
 #include <vector>
+using namespace sf;
 
-Game::Game() : window(sf::VideoMode(480, 480), "Tag Game", sf::Style::Titlebar | sf::Style::Close) {
+Game::Game() : window(VideoMode(480, 480), "Tag Game", Style::Titlebar | Style::Close) {
     Board* board;
     loadTexture();
     initializeSprites();
@@ -17,8 +18,11 @@ void Game::run() {
 }
 
 void Game::loadTexture() {
-	texture.loadFromFile("C:\\Users\\Евгений\\Desktop\\game15\\picture\\15gamepictureNonBorderedREAL.jpg");
-    
+<<<<<<< Updated upstream
+    texture.loadFromFile("D:\\laboaip\\game15\\picture\\15gamepictureNonBorderedREAL.jpg");
+=======
+    texture.loadFromFile("D:\\git\\THE15GAME\\picture\\15gamepictureNonBorderedREAL.jpg");
+>>>>>>> Stashed changes
 }
 
 void Game::initializeSprites() {
@@ -27,38 +31,38 @@ void Game::initializeSprites() {
         for (int j = 0; j < 4; j++) {
             n++;
             sprites[n].setTexture(texture);
-            sprites[n].setTextureRect(sf::IntRect(i * cellSize, j * cellSize, cellSize, cellSize));
+            sprites[n].setTextureRect(IntRect(i * cellSize, j * cellSize, cellSize, cellSize));
             grid[i + 1][j + 1] = n;
         }
     }
 }
 
 void Game::handleEvents() {
-    sf::Event event;
+    Event event;
     while (window.pollEvent(event)) {
-        if (event.type == sf::Event::Closed)
+        if (event.type == Event::Closed)
             window.close();
 
-        if (event.type == sf::Event::MouseButtonPressed && event.key.code == sf::Mouse::Left) {
+        if (event.type == Event::MouseButtonPressed && event.key.code == Mouse::Left) {
             handleMouseClick();
         }
 
-        if (event.type == sf::Event::KeyPressed) {
+        if (event.type == Event::KeyPressed) {
             handleKeyPress(event.key.code);
         }
     }
 }
 
 void Game::handleMouseClick() {
-    sf::Vector2i pos = sf::Mouse::getPosition(window);
+    Vector2i pos = Mouse::getPosition(window);
     int x = pos.x / cellSize + 1;
     int y = pos.y / cellSize + 1;
     moveTile(x, y);
 }
 
-void Game::handleKeyPress(sf::Keyboard::Key key) {
+void Game::handleKeyPress(Keyboard::Key key) {
     // Check for a specific key (e.g., space) to trigger shuffling
-    if (key == sf::Keyboard::Space) {
+    if (key == Keyboard::Space) {
         shuffleTiles();
     }
 }
@@ -73,8 +77,8 @@ void Game::shuffleTiles() {
     }
 
     // Use a random engine to shuffle the tiles
-    std::random_device rd;
-    std::default_random_engine rng(rd());
+    std::random_device rd;//source of random numbers
+    std::default_random_engine rng(rd());//rnd numbers generator
     std::shuffle(tiles.begin(), tiles.end(), rng);
 
     // Update the grid with the shuffled tiles
@@ -93,14 +97,15 @@ void Game::moveTile(int x, int y) {
         dx = 1;
         dy = 0;
     }
-    else if (grid[x - 1][y] == 16) {
-        dx = -1;
-        dy = 0;
-    }
     else if (grid[x][y + 1] == 16) {
         dx = 0;
         dy = 1;
     }
+    else if (grid[x - 1][y] == 16) {
+        dx = -1;
+        dy = 0;
+    }
+
     else if (grid[x][y - 1] == 16) {
         dx = 0;
         dy = -1;

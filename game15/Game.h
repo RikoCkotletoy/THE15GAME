@@ -11,9 +11,9 @@ public:
     void run();
 
 private:
-    sf::RenderWindow window;
-    sf::Texture texture;
-    sf::Sprite sprites[17];
+    RenderWindow window;
+    Texture texture;
+    Sprite sprites[17];
     int grid[6][6] = { 0 };
     int cellSize = 120;
 

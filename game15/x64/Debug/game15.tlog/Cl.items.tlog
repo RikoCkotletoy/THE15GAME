@@ -1,3 +1,7 @@
-D:\github\THE15GAME\game15\Board.cpp;D:\github\THE15GAME\game15\x64\Debug\Board.obj
-D:\github\THE15GAME\game15\Game.cpp;D:\github\THE15GAME\game15\x64\Debug\Game.obj
-D:\github\THE15GAME\game15\main.cpp;D:\github\THE15GAME\game15\x64\Debug\main.obj
+<<<<<<< Updated upstream
+D:\laboaip\game15\game15\game15.cpp;D:\laboaip\game15\game15\x64\Debug\game15.obj
+=======
+D:\git\THE15GAME\game15\Board.cpp;D:\git\THE15GAME\game15\x64\Debug\Board.obj
+D:\git\THE15GAME\game15\Game.cpp;D:\git\THE15GAME\game15\x64\Debug\Game.obj
+D:\git\THE15GAME\game15\main.cpp;D:\git\THE15GAME\game15\x64\Debug\main.obj
+>>>>>>> Stashed changes
