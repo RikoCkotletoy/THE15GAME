@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< Updated upstream
       <FullPath>D:\laboaip\game15\x64\Debug\game15.exe</FullPath>
+=======
+      <FullPath>D:\git\THE15GAME\x64\Debug\game15.exe</FullPath>
+>>>>>>> Stashed changes
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
